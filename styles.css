@@ -1,0 +1,215 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --pad-Size: 6rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-size: 15px;
+  /* background-color: blueviolet; */
+  color: var(--Black);
+  font-family: "Alata", sans-serif;
+}
+.hero-section {
+  width: 100%;
+  height: 75vh;
+  background: url("images/desktop/image-hero.jpg") no-repeat center;
+  background-size: cover;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 6rem 0 6rem;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  height: 20px;
+}
+.links {
+  display: flex;
+}
+.links a {
+  position: relative;
+}
+.links a:hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.3 ease-in-out;
+  background-color: white;
+}
+.nav-bar ul {
+  list-style: none;
+}
+.nav-bar a {
+  text-decoration: none;
+  margin: 0.8rem;
+  color: var(--White);
+  cursor: pointer;
+}
+.hero-section p {
+  margin-top: 1.5rem;
+  margin: var(--pad-Size);
+  padding: 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  border: 2px solid white;
+  max-width: 500px;
+  color: white;
+}
+.mid-sec {
+  margin-top: 7rem;
+  margin-left: var(--pad-Size);
+  margin-right: var(--pad-Size);
+  position: relative;
+}
+.left-p {
+  position: absolute;
+  top: 32%;
+  width: 600px;
+  left: 50%;
+  background-color: white;
+  padding: 4rem;
+}
+.left-p h4 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation {
+  display: flex;
+  margin-top: 7rem;
+  margin-left: var(--pad-Size);
+  margin-right: var(--pad-Size);
+  justify-content: space-between;
+  align-items: center;
+}
+.creation a:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.3 ease-in-out;
+}
+.creation h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+.creation a {
+  font-family: "Josefin Sans", sans-serif;
+  border: 2px solid black;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.6rem 2rem;
+  color: black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: var(--pad-Size);
+  margin-right: var(--pad-Size);
+  margin-top: 3rem;
+  gap: 20px 20px;
+}
+.container {
+  position: relative;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Dark-Gray);
+  opacity: 0;
+  transition: all 0.5 ease;
+}
+.container:hover .image-overlay {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.container img {
+  display: block;
+  width: 100%;
+}
+.desc p {
+  position: absolute;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 2px;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2.5rem;
+  width: 200px;
+}
+.footer-nav {
+  background-color: black;
+  margin-top: 3rem;
+}
+.footer {
+  margin-left: var(--pad-Size);
+  margin-right: var(--pad-Size);
+}
+.top-footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.socials img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+.bottom-footer a {
+  text-decoration: none;
+  color: white;
+}
+.f-links {
+  display: flex;
+  gap: 1.2rem;
+}
+.bottom-footer p {
+  color: white;
+}
+.f-links a {
+  position: relative;
+}
+.f-links a:hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.3 ease-in-out;
+  background-color: white;
+}
