@@ -371,9 +371,15 @@ body {
       --pad-Size: 2rem;
     }
     .hero-section p {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       line-height: 1.6;
       margin-top: 4rem;
+    }
+    .left-p {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+      width: 100%;
     }
     .left-p h4 {
       font-size: 1.5rem;
@@ -381,7 +387,10 @@ body {
     }
     .creation {
       flex-direction: column;
-      gap: 2rem;s
+      gap: 2rem;
+    }
+    .creation h4 {
+      font-size: 1.8rem;
     }
   }
 }
